@@ -56,8 +56,8 @@ export default function Hero({ wpp }: { wpp: string }) {
             </div>
           </div>
 
-          {/* Direita — painel visual placeholder */}
-          <div className="lg:col-span-5 h-[340px] sm:h-[380px] lg:h-[420px] flex items-center justify-center relative select-none">
+          {/* Direita — painel visual placeholder (só a partir de lg; no mobile some) */}
+          <div className="hidden lg:flex lg:col-span-5 h-[340px] sm:h-[380px] lg:h-[420px] items-center justify-center relative select-none">
             <div className="w-full h-full max-h-[400px] bg-navy/60 border border-midblue/20 p-6 rounded-lg shadow-2xl backdrop-blur-sm flex flex-col justify-between relative overflow-hidden">
               <div className="flex justify-between items-center pb-4 border-b border-pure/10">
                 <div>

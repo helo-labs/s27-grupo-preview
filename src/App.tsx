@@ -37,10 +37,9 @@ export default function App() {
         target="_blank"
         rel="noopener noreferrer"
         referrerPolicy="no-referrer"
-        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-skyblue hover:bg-midblue rounded-full shadow-2xl transition-all hover:scale-110 active:scale-95"
+        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-orange hover:bg-oranhov rounded-full shadow-2xl transition-all hover:scale-110 active:scale-95"
         aria-label="Fale conosco no WhatsApp"
       >
-        <span className="absolute inset-0 rounded-full bg-skyblue animate-ping opacity-50" />
         <MessageSquare className="w-7 h-7 text-white fill-current relative z-10" />
       </a>
     </div>
