@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Instagram, Facebook, Phone, Menu, X, ArrowUpRight } from 'lucide-react';
 import { INSTAGRAM_URL, FACEBOOK_URL } from '../lib/constants';
+import logo from '../assets/logo.png';
 
 const links = [
   { name: 'Início', href: '#inicio' },
@@ -52,7 +53,7 @@ export default function Header({ wpp }: { wpp: string }) {
   aria-label="S27 Grupo Logística"
 >
   <img
-    src="./public/logo.png"
+    src={logo}
     alt="S27 Grupo Logística"
     className="h-14 w-auto transition-transform group-hover:scale-105"
   />

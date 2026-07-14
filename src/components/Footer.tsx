@@ -1,5 +1,6 @@
 import { Instagram, Facebook, Phone, Mail, ShieldCheck, ChevronRight } from 'lucide-react';
 import { FOUNDING_YEAR, INSTAGRAM_URL, FACEBOOK_URL } from '../lib/constants';
+import logo from '../assets/logo.png';
 
 export default function Footer({ wpp }: { wpp: string }) {
   const year = new Date().getFullYear();
@@ -21,7 +22,7 @@ export default function Footer({ wpp }: { wpp: string }) {
   aria-label="S27 Grupo Logística"
 >
   <img
-    src="./public/logo.png"
+    src={logo}
     alt="S27 Grupo Logística"
     className="h-10 w-auto transition-transform group-hover:scale-105"
   />

@@ -1,5 +1,6 @@
 import { Phone, ArrowRight, ShieldCheck, Clock, Award, Truck } from 'lucide-react';
 import { FOUNDING_YEAR, getYearsInBusiness } from '../lib/constants';
+import frota from '../assets/frota.jpeg';
 
 export default function Hero({ wpp }: { wpp: string }) {
   const years = getYearsInBusiness();
@@ -68,7 +69,7 @@ export default function Hero({ wpp }: { wpp: string }) {
               <div className="flex-1 flex flex-col items-center justify-center my-4 border border-dashed border-pure/10 rounded bg-navy/30 relative py-6 px-4">
                 <div className="flex-1 overflow-hidden rounded-lg">
   <img
-    src="./public/frota.jpeg"
+    src={frota}
     alt="Frota da S27 Grupo realizando transporte rodoviário de cargas"
     className="w-full h-full object-cover"
   />
