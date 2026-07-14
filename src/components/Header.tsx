@@ -42,6 +42,7 @@ export default function Header({ wpp }: { wpp: string }) {
   }, [open]);
 
   return (
+    <>
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
       scrolled ? 'bg-navy/95 backdrop-blur-md py-2.5 shadow-lg border-midblue/30' : 'bg-navy py-3.5 border-midblue/20'
     }`}>
@@ -89,8 +90,12 @@ export default function Header({ wpp }: { wpp: string }) {
           </button>
         </div>
       </div>
+    </header>
 
-      {/* Drawer mobile */}
+    {/* Drawer mobile — fora do <header> de propósito: o header ganha
+        backdrop-blur ao rolar a página, e um ancestral com backdrop-filter
+        vira containing block de descendentes "fixed", o que espremia esse
+        menu dentro da caixinha do header em vez de cobrir a tela toda. */}
       <div className={`fixed inset-0 top-16 z-40 bg-navy lg:hidden transition-all duration-300 ease-in-out overflow-y-auto
         ${open ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-4 invisible'}`}>
         <div className="px-4 py-8 space-y-4">
@@ -118,6 +123,6 @@ export default function Header({ wpp }: { wpp: string }) {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }
