@@ -175,8 +175,8 @@ export default function QuoteForm() {
           </fieldset>
 
           <button type="submit"
-            className="w-full flex items-center justify-center space-x-3 bg-orange hover:bg-oranhov text-white font-bold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 uppercase tracking-wider text-sm">
-            <Send className="w-5 h-5" />
+            className="w-full flex items-center justify-center space-x-2 sm:space-x-3 bg-orange hover:bg-oranhov text-white font-bold py-4 rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5 uppercase tracking-normal sm:tracking-wider text-[11px] sm:text-sm">
+            <Send className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
             <span>Enviar Solicitação pelo WhatsApp</span>
           </button>
           <p className="text-center text-xs text-gray-400">Ao enviar, abriremos o WhatsApp com uma mensagem já preenchida com os dados acima.</p>
