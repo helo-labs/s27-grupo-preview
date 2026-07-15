@@ -55,14 +55,14 @@ export default function Services() {
               <div>
                 <div className="flex items-center justify-between mb-6">
                   <div className="w-14 h-14 bg-offwh/50 group-hover:bg-orange/10 rounded-xl flex items-center justify-center transition-all border border-offwh">
-                    <Icon name={svc.iconName} className="w-8 h-8 text-navy group-hover:text-orange transition-colors" />
+                    <Icon name={svc.iconName} className="w-8 h-8 text-orange" />
                   </div>
                   <span className="text-xs font-mono font-bold text-orange opacity-40 group-hover:opacity-100 transition-opacity">0{i + 1}</span>
                 </div>
                 <h3 className="font-display font-black text-xl text-navy uppercase mb-3 group-hover:text-orange transition-colors">{svc.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{svc.description}</p>
               </div>
-              <div className="flex items-center text-navy group-hover:text-orange font-bold text-xs transition-colors pt-4 border-t border-offwh uppercase tracking-wider mt-4">
+              <div className="flex items-center text-orange font-bold text-xs transition-colors pt-4 border-t border-offwh uppercase tracking-wider mt-4">
                 <span>Ver detalhes</span>
                 <ChevronRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
               </div>
