@@ -43,13 +43,11 @@ export default function Services() {
   const years = getYearsInBusiness();
 
   return (
-    <section id="servicos" className="relative bg-pure pt-1 pb-24 px-4 sm:px-6 lg:px-8">
-      <div className="absolute top-0 left-0 right-0 h-24 sm:h-32 bg-navy pointer-events-none" />
-
+    <section id="servicos" className="relative bg-pure pt-16 sm:pt-20 pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto relative z-10">
 
-        {/* Cards flutuantes — todos com o mesmo estilo (destaque em azul-marinho) */}
-        <div className="-mt-14 sm:-mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
+        {/* Cards — todos com o mesmo estilo (destaque em azul-marinho), totalmente sobre o fundo claro */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
           {services.map((svc, i) => (
             <button key={svc.id}
               onClick={() => setSelected(svc)}
