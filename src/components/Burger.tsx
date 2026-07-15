@@ -2,20 +2,20 @@ export default function Burger({ open }: { open: boolean }) {
   const bar: React.CSSProperties = {
     position: 'absolute',
     left: 0,
-    height: 4,
+    height: 2,
     width: '100%',
     background: 'currentColor',
-    borderRadius: 9,
+    borderRadius: 4,
     transition: 'all .25s ease-in-out',
   };
 
   return (
-    <span className="relative inline-block" style={{ width: 40, height: 30 }}>
+    <span className="relative inline-block" style={{ width: 22, height: 16 }}>
       <span
         style={{
           ...bar,
           top: 0,
-          left: open ? 5 : 0,
+          left: open ? 3 : 0,
           transformOrigin: 'left center',
           transform: open ? 'rotate(45deg)' : 'rotate(0deg)',
         }}
@@ -33,8 +33,8 @@ export default function Burger({ open }: { open: boolean }) {
       <span
         style={{
           ...bar,
-          top: open ? 28 : '100%',
-          left: open ? 5 : 0,
+          top: open ? 14 : '100%',
+          left: open ? 3 : 0,
           transformOrigin: 'left center',
           transform: open ? 'rotate(-45deg)' : 'translateY(-100%)',
         }}
