@@ -43,7 +43,7 @@ export default function Services() {
   const years = getYearsInBusiness();
 
   return (
-    <section id="servicos" className="relative bg-pure pt-16 sm:pt-20 pb-24 px-4 sm:px-6 lg:px-8">
+    <section id="servicos" className="relative bg-pure pt-10 sm:pt-12 pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto relative z-10">
 
         {/* Cards — todos com o mesmo estilo (destaque em azul-marinho), totalmente sobre o fundo claro */}

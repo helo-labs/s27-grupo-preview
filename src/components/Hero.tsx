@@ -6,7 +6,7 @@ export default function Hero({ wpp }: { wpp: string }) {
   const years = getYearsInBusiness();
 
   return (
-    <section id="inicio" className="relative bg-navy pt-24 pb-14 sm:pt-28 sm:pb-16 flex items-center overflow-hidden">
+    <section id="inicio" className="relative bg-navy pt-24 pb-8 sm:pt-28 sm:pb-10 flex items-center overflow-hidden">
       {/* grade de pontos */}
       <div className="absolute inset-0 opacity-[0.12] pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(#1D84B5 1px, transparent 0)', backgroundSize: '30px 30px' }} />
