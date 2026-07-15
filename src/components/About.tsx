@@ -24,7 +24,7 @@ export default function About() {
           <div className="lg:col-span-7 space-y-8">
             <div>
               <span className="text-xs font-mono tracking-widest text-orange font-bold uppercase block mb-2">Quem Somos</span>
-              <h2 className="font-display font-black text-pure text-3xl sm:text-4xl tracking-tight uppercase leading-tight mb-3">
+              <h2 className="font-display font-black text-pure text-3xl sm:text-4xl tracking-tight leading-tight mb-3">
                 Experiência, segurança e compromisso em cada operação logística.
               </h2>
               <div className="w-16 h-1.5 bg-orange rounded-sm" />
