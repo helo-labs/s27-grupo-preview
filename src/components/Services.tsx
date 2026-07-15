@@ -51,7 +51,7 @@ export default function Services() {
           {services.map((svc, i) => (
             <button key={svc.id}
               onClick={() => setSelected(svc)}
-              className="group bg-pure p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-2 cursor-pointer text-left border border-navy/5 border-t-4 border-t-orange">
+              className="group bg-pure p-8 rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col justify-between transform hover:-translate-y-2 cursor-pointer text-left border border-navy/5 border-t-4 border-t-navy hover:border-t-orange">
               <div>
                 <div className="flex items-center justify-between mb-6">
                   <div className="w-14 h-14 bg-offwh/50 group-hover:bg-orange/10 rounded-xl flex items-center justify-center transition-all border border-offwh">

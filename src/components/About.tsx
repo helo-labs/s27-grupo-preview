@@ -44,14 +44,13 @@ export default function About() {
 
             {/* Abas */}
             <div className="bg-pure border border-navy/10 p-6 rounded-lg shadow-xl">
-              <div className="flex border-b border-offwh/80 mb-6 space-x-2 sm:space-x-4 overflow-x-auto">
+              <div className="flex flex-wrap gap-x-5 gap-y-2 border-b border-offwh/80 mb-6">
                 {(['missao', 'valores', 'frota'] as Tab[]).map(t => {
                   const labels: Record<Tab, string> = { missao: 'Nossa Missão', valores: 'Nossos Valores', frota: 'Nossa Frota' };
                   return (
                     <button key={t} onClick={() => setTab(t)}
-                      className={`pb-2 font-display font-bold text-xs sm:text-sm transition-all relative whitespace-nowrap ${tab === t ? 'text-orange' : 'text-gray-500 hover:text-navy'}`}>
+                      className={`pb-2 -mb-px font-display font-bold text-sm transition-all border-b-2 ${tab === t ? 'text-orange border-orange' : 'text-gray-500 border-transparent hover:text-navy'}`}>
                       {labels[t]}
-                      {tab === t && <span className="absolute bottom-[-13px] left-0 right-0 h-[2.5px] bg-orange rounded-full" />}
                     </button>
                   );
                 })}
