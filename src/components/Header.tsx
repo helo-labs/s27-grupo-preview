@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Instagram, Facebook, Phone, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Instagram, Facebook, Phone, ArrowUpRight } from 'lucide-react';
 import { INSTAGRAM_URL, FACEBOOK_URL } from '../lib/constants';
 import logo from '../assets/logo.png';
+import Burger from './Burger';
 
 const links = [
   { name: 'Início', href: '#inicio' },
@@ -86,7 +87,7 @@ export default function Header({ wpp }: { wpp: string }) {
         <div className="flex items-center space-x-2 lg:hidden">
           <SocialLinks iconClassName="w-4 h-4" wrapperClassName="text-pure/70 hover:text-orange transition-colors p-1.5" />
           <button onClick={() => setOpen(!open)} className="text-pure p-2 hover:bg-pure/10 rounded-lg transition-colors" aria-label="Menu" aria-expanded={open} id="mobile-menu-toggle">
-            {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            <Burger open={open} />
           </button>
         </div>
       </div>
