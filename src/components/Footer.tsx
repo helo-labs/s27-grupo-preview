@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Phone, Mail, ShieldCheck, ChevronRight } from 'lucide-react';
+import { Instagram, Facebook, Phone, Mail, MapPin, ShieldCheck, ChevronRight } from 'lucide-react';
 import { FOUNDING_YEAR, INSTAGRAM_URL, FACEBOOK_URL } from '../lib/constants';
 import logo from '../assets/logo.png';
 
@@ -82,7 +82,11 @@ export default function Footer({ wpp }: { wpp: string }) {
               </li>
               <li className="flex items-center space-x-3 text-sm">
                 <Mail className="w-5 h-5 text-orange flex-shrink-0" />
-                <span className="text-pure/70 font-light">contato@s27grupo.com.br</span>
+                <span className="text-pure/70 font-light">wanderlei@s27log.com.br</span>
+              </li>
+              <li className="flex items-start space-x-3 text-sm">
+                <MapPin className="w-5 h-5 text-orange flex-shrink-0 mt-0.5" />
+                <span className="text-pure/70 font-light">Rua Florêncio Carpi, 159 – Jd. Canaã, São Paulo/SP · CEP 05267-080</span>
               </li>
             </ul>
           </div>
